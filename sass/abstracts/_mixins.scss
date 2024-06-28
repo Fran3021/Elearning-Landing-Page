@@ -30,4 +30,13 @@
   list-style: none;
 }
 
-
+@mixin button{
+  display: inline-block;
+  color: $white;
+  font-size: 18px;
+  background-color: $black;
+  padding: 15px 37px 15px 38px;
+  width: max-content;
+  border-radius: 28px;
+  text-decoration: none;
+}

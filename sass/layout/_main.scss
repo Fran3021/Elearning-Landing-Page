@@ -1,0 +1,80 @@
+.hero{
+    padding-top: 38px;
+    &__title{
+        font-size: 45px;
+        color: $black;
+        font-weight: bold;
+        margin-bottom: 30px;
+        line-height: 51px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-weight: 500;
+        color: $grey;
+        line-height: 26px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    &__button{
+        margin-bottom: 40px;
+        ul{
+            @include reset-list;
+            a{
+                @include button;
+                background-image: $gradient-pink-blue;
+            }
+        }
+    }
+    &__image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img{
+            width: 80%;
+        }
+    }
+    &__number-1{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px;
+    background-color: #FCFCFF;
+    border-radius: 10px;
+    position: absolute;
+    top:10%;
+    right: 8%;
+    box-shadow:100px 50px 100px $grey;
+    .title{
+        font-size: 14px;
+        font-weight: bold;
+        color: $grey;
+        }
+    .number{
+        font-size: 32px;
+        font-weight: bold;
+        color: $black;
+        }        
+    }
+    &__number-2{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 45px 16px 20px;
+        background-color: #FCFCFF;
+        border-radius: 10px;
+        position: absolute;
+        bottom:0%;
+        left: 7%;
+        box-shadow: -8px 50px 100px silver;
+        .title{
+            font-size: 14px;
+            font-weight: bold;
+            color: $grey;
+            }
+        .number{
+            font-size: 32px;
+            font-weight: bold;
+            color: $black;
+            }        
+        }
+}

@@ -1,0 +1,18 @@
+.footer-principal{
+    background-color: $black;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 36px 16px;
+        .nav-footer{
+            ul{
+                @include reset-list;
+                .button{
+                    @include button;
+                    background-image: $gradient-blue-pink;
+                }
+            }
+        }
+    }
+}

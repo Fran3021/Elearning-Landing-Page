@@ -1,0 +1,60 @@
+.activities{
+    padding-top: 66px;
+    background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__header{
+        background-image: $gradient-pink-blue;
+        color: $white;
+        padding: 24px 29px 32px 28px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 32px;
+        }
+    }
+    &__item{
+        padding: 56px 29px 32px 28px;
+        background-color: $white;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        .activities-icon{
+            background-image: $gradient-pink-blue;
+            padding: 10px;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: 30px;
+        }
+        .activities-title{
+            font-size: 20px;
+            color: $black;
+            margin-bottom: 16px;
+        }
+        .activities-description{
+            font-size: 16px;
+            color: $grey;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        .activities-link{
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+                color: $pink;
+            }
+        }
+    }
+}

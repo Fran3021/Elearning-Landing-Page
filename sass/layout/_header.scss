@@ -1,2 +1,20 @@
-
+.header-principal{
+    padding-top: 30px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 90px;
+        }
+        .nav-principal{
+            ul{
+                @include reset-list;
+                .button{
+                    @include button
+                }
+            }
+        }
+    }
+}
 
