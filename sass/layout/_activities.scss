@@ -1,9 +1,26 @@
 .activities{
     padding-top: 66px;
     background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+    @include breakpoint(desktop){
+        padding-top: 0px;
+    }
     .container{
         display: flex;
         flex-direction: column;
+        @include breakpoint (tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding-top: 50px;
+            column-gap: 10px;
+        }
+        @include breakpoint (desktop){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding-top: 50px;
+            column-gap: 10px;
+        }
     }
     &__header{
         background-image: $gradient-pink-blue;

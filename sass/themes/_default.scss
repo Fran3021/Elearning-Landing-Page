@@ -4,4 +4,22 @@ html * {
 
 body {
     overflow-x: hidden;
+    @include breakpoint (tablet){
+        background-image: url(../../img/hero-image.png);
+        background-repeat: no-repeat;
+        background-size: 310px;
+        background-position: 100% 5%;
+    }
+    @include breakpoint(tablethorizontal){
+        background-image: url(../../img/hero-image-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 400px;
+    }
+    @include breakpoint(desktop){
+        background-image: url(../../img/hero-image-desktop.png);
+        background-repeat: no-repeat;
+        background-position: 100% 0%;
+        background-size: 500px;
+    }
 } 

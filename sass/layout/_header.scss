@@ -10,8 +10,13 @@
         .nav-principal{
             ul{
                 @include reset-list;
-                .button{
-                    @include button
+                .button-header{
+                    @include button;
+                    @include breakpoint(desktop){
+                        &:hover{
+                            background-color: $blue;
+                        }
+                    }
                 }
             }
         }

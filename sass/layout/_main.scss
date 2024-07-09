@@ -1,11 +1,20 @@
 .hero{
     padding-top: 38px;
+    @include breakpoint(tablet){
+        padding-bottom: 90px;
+    }
+    @include breakpoint(desktop){
+        height: 600px
+    }
     &__title{
         font-size: 45px;
         color: $black;
         font-weight: bold;
         margin-bottom: 30px;
         line-height: 51px;
+        @include breakpoint (tablet){
+            max-width: 50%;
+        }
     }
     &__subtitle{
         font-size: 16px;
@@ -14,6 +23,9 @@
         line-height: 26px;
         width: 80%;
         margin-bottom: 30px;
+        @include breakpoint (tablet){
+            max-width: 50%;
+        }
     }
     &__button{
         margin-bottom: 40px;
@@ -22,6 +34,11 @@
             a{
                 @include button;
                 background-image: $gradient-pink-blue;
+                @include breakpoint(desktop){
+                    &:hover{
+                        background-image:$gradient-green-lime;
+                    }
+                }
             }
         }
     }
@@ -31,8 +48,11 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        img{
+        .hero-mobile{
             width: 80%;
+            @include breakpoint(tablet){
+                display: none;
+            }
         }
     }
     &__number-1{
@@ -45,6 +65,19 @@
     top:10%;
     right: 8%;
     box-shadow:100px 50px 100px $grey;
+    @include breakpoint (tablet){
+        top: -300px;
+        right: 0px;
+    }
+    @include breakpoint (tablethorizontal){
+        top: -250px;
+        right: 50px;
+    }
+    @include breakpoint (desktop){
+        top: -200px;
+        right: 0px;
+        padding: 16px 40px 16px 20px;
+    }
     .title{
         font-size: 14px;
         font-weight: bold;
@@ -66,6 +99,18 @@
         bottom:0%;
         left: 7%;
         box-shadow: -8px 50px 100px silver;
+        @include breakpoint (tablet){
+            bottom: -90px;
+            left: 420px;
+        }
+        @include breakpoint(tablethorizontal){
+            bottom: -80px;
+            left: 580px;
+        }
+        @include breakpoint (desktop){
+            bottom: -110px;
+            left: 520px;
+        }
         .title{
             font-size: 14px;
             font-weight: bold;

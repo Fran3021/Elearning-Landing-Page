@@ -8,9 +8,14 @@
         .nav-footer{
             ul{
                 @include reset-list;
-                .button{
+                .button-footer{
                     @include button;
                     background-image: $gradient-blue-pink;
+                    @include breakpoint(desktop){
+                        &:hover{
+                            background-image: $gradient-blue-green;
+                        }
+                    }
                 }
             }
         }
