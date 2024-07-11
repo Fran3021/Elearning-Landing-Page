@@ -78,6 +78,14 @@
         right: 0px;
         padding: 16px 40px 16px 20px;
     }
+    @include breakpoint (desktopxl){
+        top: -230px;
+        right: -90px;
+    }
+    @include breakpoint (desktopxxl){
+        top: -180px;
+        right: -120px;
+    }
     .title{
         font-size: 14px;
         font-weight: bold;
@@ -110,6 +118,14 @@
         @include breakpoint (desktop){
             bottom: -110px;
             left: 520px;
+        }
+        @include breakpoint (desktopxl){
+            bottom: -170px;
+            left: 770px;
+        }
+        @include breakpoint (desktopxxl){
+            bottom: -220px;
+            left: 1200px;
         }
         .title{
             font-size: 14px;
